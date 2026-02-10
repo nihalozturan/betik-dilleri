@@ -1,0 +1,17 @@
+    fb_sayac = 0
+    gs_sayac = 0
+    ber_sayac = 0
+    for i in range(4000):
+        z1 = random.randint(1, 6)
+        z2 = random.randint(1, 6)
+        if z1 % 2 == 0 and z2 % 2 == 0:
+            fb_sayac+=1
+        elif z1 % 2 == 1 and z2 % 2 == 1:
+            gs_sayac+=1
+        else:
+            ber_sayac+=1
+
+    all=fb_sayac+gs_sayac+ber_sayac
+    print('fb:',fb_sayac/all)
+    print('gs:', gs_sayac / all)
+    print('fb:', ber_sayac / all)
