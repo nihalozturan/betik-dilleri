@@ -56,12 +56,17 @@ while True:
 
 
 
+import time
 
 def trade(rsi):
     if rsi<20:
         print('-----------ALIM YAPILDI')
     elif rsi>80:
         print('-----------SATIŞ YAPILDI')
+#kazandığını random oluştur(1 ile 10 arası)
+        time.sleep(1)
+#altin_al fonksiyonuna kazandığıı goster
+        time.sleep(1)
 
     else:
         print('====POZİSYONUNU KORU====')
@@ -70,6 +75,7 @@ def math(a,b):
     try:
         print(a//b)
     except:
-        print('sayıyı sıfıra böldün sonuc =0')
+        print('sayıyı sıfıra böldün sonuc = 0')
+
 
 
